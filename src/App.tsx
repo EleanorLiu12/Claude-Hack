@@ -208,14 +208,14 @@ function App() {
   const canGenerateRoute = searchType && timeAvailable && transportation && startLocation;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-gray-50 p-4">
+    <div className="min-h-screen bg-gradient-to-br from-red-100 via-white to-red-50 p-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-8 text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">
+          <h1 className="text-4xl font-bold text-primary mb-2">
             Madison Thrift Route Optimizer
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-muted-foreground">
             Stop wandering aimlessly. Get the perfect thrifting route for your schedule.
           </p>
         </div>
@@ -393,7 +393,7 @@ function App() {
                     <div className="flex justify-between items-start">
                       <div>
                         <div className="flex items-center gap-2 mb-1">
-                          <div className="w-8 h-8 rounded-full bg-red-600 text-white flex items-center justify-center font-bold">
+                          <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">
                             {index + 1}
                           </div>
                           <CardTitle className="text-xl">{stop.store.name}</CardTitle>
@@ -464,9 +464,9 @@ function App() {
             </div>
 
             {/* Additional Tips */}
-            <Card className="shadow-lg bg-gradient-to-r from-red-50 to-orange-50">
+            <Card className="shadow-lg bg-gradient-to-r from-red-50 to-white">
               <CardHeader>
-                <CardTitle>Madison Thrifting Wisdom</CardTitle>
+                <CardTitle className="text-primary">Madison Thrifting Wisdom</CardTitle>
               </CardHeader>
               <CardContent className="space-y-2">
                 <p className="text-sm">
